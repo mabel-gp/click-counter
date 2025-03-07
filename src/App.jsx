@@ -1,7 +1,16 @@
 import './App.css'
 
 function App() {
+  
+  // Definimos fx, aquí en la principal
 
+  const manejarClick = () => {
+    console.log('Click');
+  }
+  const reiniciarContador = () => {
+    console.log('Reiniciar')
+  }
+  
   return (
       <div>
         <div className='principal-container'>
@@ -12,10 +21,8 @@ function App() {
             manejarClick={}/>
           <Boton 
             texto = 'Reiniciar'
-            botonDeClick = {true}
+            botonDeClick = {false}
             manejarClick={}/>
-        </div>
-
         </div>
       </div> 
   )

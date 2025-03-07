@@ -6,7 +6,8 @@ function Boton({ texto, botonDeClick, manejarClick }){
         <button
           // Decide si el botón se mostrará como de click o de reinicio
           className={botonDeClick ? 'boton-click' : 'boton-reiniciar'}
-          //Se llama a manejar clic cuando ocurra el evento, manejarclick es una fx que se pasa como prop
+          // Se llama a manejar clic cuando ocurra el evento, manejarclick es una fx que se pasa como prop
+          // Manejar click se define en App.jsx
           onClick={manejarClick}>
           {texto}
         </button>
