@@ -1,4 +1,5 @@
 import './App.css'
+import Boton from './components/boton.jsx';
 
 function App() {
   
@@ -10,7 +11,7 @@ function App() {
   const reiniciarContador = () => {
     console.log('Reiniciar')
   }
-  
+
   return (
       <div>
         <div className='principal-container'>
@@ -18,11 +19,13 @@ function App() {
           <Boton 
             texto = 'Click'
             botonDeClick = {true}
-            manejarClick={}/>
+            // Asignamos fx respectiva a este prop
+            manejarClick = {manejarClick}/>
           <Boton 
             texto = 'Reiniciar'
             botonDeClick = {false}
-            manejarClick={}/>
+            // Asignamos fx respectiva a este prop
+            manejarClick = {reiniciarContador}/>
         </div>
       </div> 
   )
