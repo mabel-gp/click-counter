@@ -1,13 +1,18 @@
 import './App.css'
 import Boton from './components/boton.jsx';
 import Contador from './components/counter.jsx';
+import { useState } from 'react';  //Importamos hook
 
 function App() {
   
-  // Definimos fx, aquí en la principal
+  // Arreglo con dos elems: 1° es el valor que queremos usar como estado, y la 2° nos permite actualizarlo
+  const [numClicks, setNumClicks] = useState(0);
 
+  // Definimos fxs, aquí en la principal
+
+  // Cuando hago click se llama a esta fx
   const manejarClick = () => {
-    console.log('Click');
+    setNumClicks(numClicks + 1);
   }
   const reiniciarContador = () => {
     console.log('Reiniciar')
@@ -17,11 +22,12 @@ function App() {
       <div>
         <div className='contenedor-principal'>
           <Contador
-            numClicks='5' />
+            // Usamos el estado actual y lo pasamos como prop
+            numClicks={numClicks} />
           <Boton 
             texto = 'Click'
             botonDeClick = {true}
-            // Asignamos fx respectiva a este prop
+          // Asignamos fx respectiva a este prop
             manejarClick = {manejarClick} />
           <Boton 
             texto = 'Reiniciar'
