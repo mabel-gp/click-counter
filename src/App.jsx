@@ -15,7 +15,7 @@ function App() {
 
   return (
       <div>
-        <div className='principal-container'>
+        <div className='contenedor-principal'>
           <Contador
             numClicks='5' />
           <Boton 

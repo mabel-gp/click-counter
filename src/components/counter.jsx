@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */ //Desactivar validación de tipos de props
+import '../stylesheets/counter.css'
+
 
 function Contador({ numClicks }) {
     return (
