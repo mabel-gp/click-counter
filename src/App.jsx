@@ -1,7 +1,7 @@
 import './App.css'
 import Boton from './components/boton.jsx';
 import Contador from './components/counter.jsx';
-import { useState } from 'react';  //Importamos hook
+import { useState } from 'react';  //Importamos hook para actualizar estado
 
 function App() {
   
@@ -15,7 +15,7 @@ function App() {
     setNumClicks(numClicks + 1);
   }
   const reiniciarContador = () => {
-    console.log('Reiniciar')
+    setNumClicks(0);
   }
 
   return (
@@ -30,7 +30,7 @@ function App() {
           // Asignamos fx respectiva a este prop
             manejarClick = {manejarClick} />
           <Boton 
-            texto = 'Reiniciar'
+            texto = 'Reboot'
             botonDeClick = {false}
             // Asignamos fx respectiva a este prop
             manejarClick = {reiniciarContador} />

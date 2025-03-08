@@ -11,17 +11,21 @@ button{
   cursor: pointer;
 }
 
-
 button:hover {
-  background-color: #00471b;
+  background-color: #34975a;
+}
+
+button:active{
+  box-shadow: 0 2px 0px;
+  transform: translateY(2px);
 }
 
 /* Clase asigana da al botón en boton.jsx (L9) */
 .boton-click {
-  background-color: #002ead;
+  background-color: #9445da;
 }
 
 /* Clase asigana da al botón en boton.jsx (L9) */
 .boton-reiniciar{
-  background-color: #5a01a7;
+  background-color:  #2758de;
 }
