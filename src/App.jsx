@@ -1,5 +1,6 @@
 import './App.css'
 import Boton from './components/boton.jsx';
+import Contador from './components/counter.jsx';
 
 function App() {
   
@@ -15,17 +16,18 @@ function App() {
   return (
       <div>
         <div className='principal-container'>
-      
+          <Contador
+            numClicks='5' />
           <Boton 
             texto = 'Click'
             botonDeClick = {true}
             // Asignamos fx respectiva a este prop
-            manejarClick = {manejarClick}/>
+            manejarClick = {manejarClick} />
           <Boton 
             texto = 'Reiniciar'
             botonDeClick = {false}
             // Asignamos fx respectiva a este prop
-            manejarClick = {reiniciarContador}/>
+            manejarClick = {reiniciarContador} />
         </div>
       </div> 
   )
