@@ -13,9 +13,15 @@ https://mabel-gp.github.io/click-counter/
 - CSS
 - Hooks de React: Uso de useState para manejar el estado en componentes funcionales.
 
+## 👁‍🗨 Vista Previa
+
+<p align="center">
+    <img src="src/assets/click-counter.png" width="300" >
+</p>
+
 ## 📝 Aprendizajes
 
-Durante este proyecto, he aprendido:
+Durante este proyecto, aprendí sobre:
 
 **- Uso de React:** Profundicé en la creación de componentes reutilizables y en la gestión del estado utilizando hooks.
 
